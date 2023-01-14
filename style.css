@@ -39,11 +39,11 @@ h4 {
     line-height: 1.8rem;
 }
 
-/* Nav Area */
-
 .heading-text {
     text-align: center;
 }
+
+/* Nav Area */
 
 .nav-area {
     background: #562EFF;
@@ -171,6 +171,21 @@ h4 {
 /* Media Query */
 
 @media only screen and (max-width: 576px) {
+    .nav-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .players {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -190,6 +205,10 @@ h4 {
 }
 
 @media only screen and (min-width: 577px) and (max-width: 778px) {
+    .nav-bar ul {
+        gap: 10px;
+    }
+
     .players {
         grid-template-columns: repeat(2, 1fr);
     }
